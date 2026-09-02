@@ -10,9 +10,9 @@ import java.io.IOException;
 public class RegistroApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(RegistroApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        FXMLLoader fxmlLoader = new FXMLLoader(RegistroApplication.class.getResource("/ni/edu/uam/sistema_de_registro_de_colaboradores/registro-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 1050, 780);
+        stage.setTitle("Distribuidora El Güegüense - Registro de Colaboradores");
         stage.setScene(scene);
         stage.show();
     }

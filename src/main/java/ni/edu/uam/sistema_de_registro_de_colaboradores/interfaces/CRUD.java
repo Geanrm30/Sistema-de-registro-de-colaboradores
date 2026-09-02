@@ -6,4 +6,6 @@ public interface CRUD <T>{
     public void agregar(T entidad);
 
     public List<T> obtenerRegistros();
+
+    public void eliminar(T entidad);
 }

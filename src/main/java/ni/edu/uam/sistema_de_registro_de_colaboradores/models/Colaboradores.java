@@ -6,19 +6,24 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class Colaboradores {
-    private String nombre;
-    private String apellido;
+    private String nombres;
+    private String apellidos;
     private String usuario;
-    private String passwordTemp;
+    private String contrasena;
     private String cargo;
-    private String areaTrabajo;
+    private String area;
     private LocalDate fechaContratacion;
     private String tipoContrato;
-    private String beneficios;
+    private List<String> beneficios;
+
+    public String getNombreCompleto() {
+        return nombres + " " + apellidos;
+    }
 }
